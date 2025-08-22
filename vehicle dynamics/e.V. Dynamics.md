@@ -7,7 +7,7 @@ The overall technical objective in racing is the achievement of a vehicle config
 
 - - -
 
-# Tire Behavior.
+# Tire Behaviour.
 Tires are the primary source of the forces and torques which provide the control and stability (or handling) of the vehicle.
 _The area of the thread of a tire that is in contact with the ground at any given moment is called the print or footprint.
 
