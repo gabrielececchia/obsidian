@@ -1,7 +1,7 @@
 
 “Driving a car as fast as possible (in a race) is all about maintaining the highest possible acceleration level in the appropriate direction”
 
-The overall technical objective in racing is the achievement of a vehicle configuration, acceptable within the practical intepretation of the rules, which can traverse a given course in a minimum time when operated manually by a driver utilizing techniques within his/her capabilities.
+The overall technical objective in racing is the achievement of a vehicle configuration, acceptable within the practical interpretation of the rules, which can traverse a given course in a minimum time when operated manually by a driver utilizing techniques within his/her capabilities.
 
 <u>Note</u>: The point to be emphasized is that to maintain a curved path on the ground the vehicle must be moving sideways as well as forward, and lateral acceleration is merely the change in lateral speed with time to achieve this.
 
@@ -728,4 +728,103 @@ The six forces and moments are then given by:
 
 # Vehicle Axis System.
 
+At any given instant of time, a vehicle is subjected to a single force acting at some location and in some direction. This so-called external or applied force maintains the velocity or causes an acceleration of the vehicle. _This force is made up of tire, aerodynamic, and gravitational force components_.
+Since these different components are governed by different physical laws and it is not convenient to deal with this as a single, it is normal to separate tire, aerodynamic and gravitational force components act at different locations and in different directions relative to the vehicle chassis.
 
+In order to calculate accelerations and velocities in directions of interest (such as fore and aft for performance and/or left or right for turning behaviour), it is necessary to define axis systems to which the accelerations and velocities and the forces/torques causing them can be referred.
+
+## Two types of Axis Systems.
+The two basic axis systems used and defined by the Society of Automotive Engineers (SAE) are described in the following sections.
+
+### Earth-Fixed Axis System.
+This system (the capital letter system) is fixed to the ground and the letters X-Y-Z are used to denote the three principal directions; **X and Y are horizontal and at right angles to each other, Z is vertical downward.**
+
+<u>Note</u>: This earth-referenced axis system is used in this text only when it is necessary to reference some aspect of the vehicle motion to a fixed point or direction. 
+
+In problems related to vehicle motion relative to the ground, it is common to start off with the origin of the vehicle axis system (described below), coinciding with the earth axis system origin. Frequently, the axes of the two systems will also coincide initially. The calculation or measurements will then indicate the relative motions of the two axis systems.
+
+
+### Vehicle Axis System. 
+The Vehicle Axis System has it origin in aircraft usage. The principal reason for its automotive as well as aircraft use is that it is _fixed_ in the vehicle and moves with it.
+The inertia properties (moments and products of inertia) remain constant relative to this set of axes but would be variable if referenced to a set of axes fixed to the ground, for example. Not only would they be variable but they would lose in physical meaning to the engineer as the vehicle maneuvered. 
+
+<u>Note</u>: Some confusion may arise because this axis system is referred to in different ways. Quite commonly it is called a "Moving Axis System" because it moves with the vehicle; it is also labelled as "Body Axes" because it is fixed in the vehicle; frequently it is referred to as the "Stability Axes" or "Directional Control Axis System".
+
+**The point to remember is that it is fixed to the vehicle and the inertia properties relative to it are taken as constant.**
+
+The next question is: where is the origin of this axis system located and how are the axes oriented in the vehicle? The automobile is considered as a two-mass system. 
+The _unsprung_ mass is taken as a rigid frame (with steerable wheels) and the _sprung_ mass is considered as a rigid body.
+These two masses are "hinged" together at the roll axis and one variable, roll angle, specifies the relationship between the two masses.
+
+The figure below shows these respective masses and how they are brought together in the complete car.
+Axes $i_s$ and $i_u$ come together in the complete car as $i$; similarly $j_s$ and $j_u$ converge to $j$, and $k_s$ and $k_u$ to $k$.
+
+![][axis_system_used_in_determination_of_the_vehicle_axis_system.png]
+
+Axes $i, j$, and $k$ are relabelled as x, y and z (lower case) in the SAE system shown in the figure below. The system is orthogonal and is right-handed.
+The x-axis is horizontal and positive forward in the direction of motion when the vehicle is traveling in a straight line on a level road (road is assumed flat).
+The x-axis lies in the longitudinal plane of symmetry (with the vehicle assumed to have left-right symmetry). The y-axis points to the driver's right, is horizontal and 90° to the x-axis. The z-axis is perpendicular to the other two, is vertical and positive downward.
+
+![][vehicle_axis_system.png]
+
+<u>Note</u>: **Important thing to note is that the origin of the vehicle axis system (x, y, z) is the same for the sprung and unsprung masses**, as indicated in the figure above.
+
+The origin,, is located at the intersection of the vehicle roll axis and a line perpendicular to the road through the CG of the total vehicle, for a zero roll angle of the sprung mass. It is usually assumed that the sprung mass rolls about the horizontal x-axis, rather than about the actual roll axis.
+
+<u>Note</u>: Tire deflections are neglected and the plane of the wheel centers (with equal sized wheels front and rear) remains parallel to the ground.
+
+## Vehicle Motions
+In vehicle dynamics studies of a vehicle motion, it is customary for the user to fix certain operating variables. Therefore a value can be assigned to the forward velocity and the tractive/braking force or longitudinal acceleration/deceleration.
+The motion of the unsprung mass can then be studied as a _perturbation_ from the steady velocity condition; likewise the roll of the sprung mas can be studied in relation to the unsprung mass.
+
+For vehicle stability and control investigations the perturbation velocities of interest are:
+- forward velocity, $u$
+- lateral velocity, $v$
+- yawing velocity, $r$
+- rolling velocity, $p$
+
+<u>Note</u>: For stability and control investigation, the pitch and vertical perturbations ($q$ and $w$) are neglected.
+
+Since these perturbation velocity components (linear and angular) about the vehicle-fixed axes must be measured relative to a reference, and because an actual path along the ground is desired, we adopt the convention of referencing the Vehicle Axis System to the Earth-Fixed Axis System as the initial condition.
+
+The various acceleration components (rates of change of the velocity components perturbations) are defined below along with the angular relationships associated with path analysis (shown in the figure below):
+-  **Longitudinal Acceleration** is the component of the vector acceleration of a point in the vehicle in the x-direction.
+- **Side Acceleration** is the component of the vector acceleration of a point in the vehicle in the y-direction.
+- **Normal Acceleration** is the component of the vector acceleration of a point in the vehicle in the z-direction.
+- **Lateral Acceleration** is the component of the vector acceleration of a point in the vehicle perpendicular to the vehicle x-axis and parallel to the road plane.
+  
+  <u>Note</u>: In steady state condition, _lateral acceleration_ is equal to the product of _centripetal acceleration_ times the cosine of the vehicle's _sideslip angle_. Since in most test conditions the _sideslip angle_ is small, for practical purposes the _lateral acceleration_ can be considered equal to the _centripetal acceleration_.
+
+- **Centripetal Acceleration** is the component of the vector acceleration of a point in the vehicle perpendicular to the tangent to the path of that point and parallel to the road plane.
+-  **Heading Angle** ($\Psi$) is the angle between the trace on the X-Y plane of the vehicle x-axis and the X-axis of the earth-fixed axis system (see figure below).
+- **Sideslip angle** (Attitude Ange, $\beta$) is the angle between the traces on the X-Y plane of the vehicle x-axis and the vehicle velocity vector at some specified point in the vehicle.
+- **Course Angle** ($v$) is the angle between the trace of the vehicle velocity vector in the X-Y plane and X-axis of the earth-fixed system. A positive course angle is shown in the figure below.
+  
+  <u>Note</u>: Course angle is the sum of _heading angle_ and _sideslip angle_ ($v = \psi + \beta$)
+
+![][heading_sideslip_course_and_steer_angles.png]
+
+- **Vehicle Roll Angle** is the angle between the vehicle y-axis and the ground plane.
+- **Vehicle Pitch Angle** is the angle between the vehicle x-axis and the ground plane. 
+
+The force/moment components are defined below:
+_Forces_ - The external forces acting on the automobile can be summed into one force vector having the following components.
+
+- **Longitudinal Force** ($F_x$) is the component of the force vector in the x-direction.
+- **Side Force** ($F_y$) is the component of the force vector in the y-direction.
+- **Normal Force** ($F_z$) is the component of the force vector in the z-direction.
+
+_Moments_ - The external moments acting on the automobile can be summed into one moment vector having the following components.
+
+- **Rolling Moment** ($M_z$) is the component of the moment vector tending to rotate the vehicle about the x-axis, positive locking clockwise when looking in the positive direction of the x-axis.
+- **Pitching Moment** ($M_y$) is the component of the moment vector tending to rotate the vehicle about the y-axis, positive clockwise when looking in the positive direction of the y-axis.
+- **Yawing Moment** ($M_z$) is the component of the moment vector tending to rotate the vehicle about the z-axis, positive clockwise when looking in the positive direction of the z-axis.
+
+## Some thoughts on sign conventions.
+In the SAE Tire Axis System, the slip angle is defined as the angle between the wheel plane and the direction of wheel travel. _In this system, if the wheel is moving forward to the left (as in a right-hand turn), the slip angle is negative but the lateral force is positive_. 
+Following this convention, the tire lateral force data is plotted in the fourth quadrant. In actual practice, users of tire data frequently plot cornering force in the first quadrant. This negative relationship between lateral force and slip angle can be confusing in the kinematic relationship between slip and steer angles.
+
+<u>Note</u>: The term "slip angle" is a questionable one since the wheel is not actually slipping laterally but rather is operating in a yawned-rolling condition. 
+
+**Defining "slip angle" in terms of a lateral/forward velocity ratio further perpetuates the notion that the tire is literally sliding sideways as a whole.**
+In actual fact, because of the tire rolling motion, the print has areas composed of adhesion in the front and sliding in the rear.
