@@ -7,16 +7,16 @@ The overall technical objective in racing is the achievement of a vehicle config
 
 - - -
 
-# Tire Behaviour.
+# Tire Behaviour
 Tires are the primary source of the forces and torques which provide the control and stability (or handling) of the vehicle.
 _The area of the thread of a tire that is in contact with the ground at any given moment is called the print or footprint.
 
-## Lateral Force.
+## Lateral Force
 A lateral tire force generates at the “center” of the tire contact with the road, lies in the horizontal road plane and is perpendicular to the direction in which the wheel is headed if no inclination of camber exists.
 
 <u>Note</u>: A vehicle turns because of the applied lateral tire forces.
 
-### The Model Tire.
+### The Model Tire
 The tire used in the model is made by sandwiching a sheet of hard rubber between two metal disks. The only item that is varied over a set of these tires is the diameter of the metal disks; the rubber composition, thickness and diameter of the rubber are kept constant.
 
 ![](model_tire.jpg)
@@ -49,7 +49,7 @@ The lateral (or cornering) force may be thought of as the result of slip angle, 
 
 In dry conditions, race tires generally reach their peak lateral force at slip angles in the vicinity of 3° - 7°. On a wet surface the peak will in general be lower, and the fall-off in lateral force after the peak will be more rapid.
 
-## Aligning torque and pneumatic trail.
+## Aligning torque and pneumatic trail
 Aligning torque (or moment) describes a tire’s tendency to steer about a vertical axis through the “center” of the print (the origin of the tire axis system).
 At low and medium slip angles the tire tends to align its heading with its path. In other words, tires like to point the way they are going. 
 
@@ -59,14 +59,14 @@ This uneven distribution gives rise to aligning torque. The latter is typically 
 *Pneumatic trail* is a different way of looking at this asymmetry in the print. The pneumatic trail is the distance from the fore-aft center of the print to the center of action of the lateral force. 
 *==The tire aligning torque is the lateral force times the pneumatic trail, or, penumatic trail equals aligning torque divided by the lateral force==*.
 
-### Linear Range - Low slip angle
+### Linear Range - Low  slip angle
 The higher stresses in the aft part of the print work to reduce the slip angle. This is true in the linear range of tire performance. 
 
 ### Nonlinear - High slip angle
 At high slip angles, the rear of the print is sliding laterally along the ground. This reduces the amount of stabilizing aligning torque. At breakway (the friction limit) the aligning torque is reduced to near zero, ad in many cases actually reverses sign. 
 This means that when the tire is sliding, it no longer has any tendency to line up with its path (and may actually try to increase its slip angle).
 
-## Mechanical Trail, Pneumatic Trail and Steering Torques.
+## Mechanical Trail, Pneumatic Trail and Steering Torques
 *Trail* is illustrated by a swiveling caster. The tire print trails behind its steering pivot.
 In other words, the caster angle gives a mechanical trail.
 Another way to obtain mechanical trail is to move the kingpin forward of the wheel centre.
@@ -80,12 +80,12 @@ The sum of the mechanical trail plus the pneumatic trail times the lateral force
 
 - - -
 
-## Longitudinal Force.
+## Longitudinal Force
 In order to accelerate or brake a vehicle, longitudinal forces must be developed between the tires and the ground, in the tire footprints. No change in speed (acceleration) can take place without an applied force acting on the vehicle mass in accordance with Newton’s second law. 
 The mechanism in the tire for developing longitudinal forces bears some relationship to that for lateral forces inasmuch as there is an elastic distortion region (in case longitudinal stretching) and a sliding or frictional region.
 In the case of acceleration, for instance, the tire is experiencing a driving torque at zero slip angle (straight wheel).
 
-## Tractive Force.
+## Tractive Force
 In the image below the axle of the wheel is fixed and horizontal and the platform representing the road is moved relative to it. This situation shown corresponds in real life to the tire rolling forward to the left of the figure under the action of the applied driving torque, 
 
 ![](tire_print_characteristics_driving.jpg)
@@ -101,7 +101,7 @@ The longitudinal velocity in the print relative to the velocity of the undeflect
 
 All this explanations gather us enough information to say that, _this slinding in the print means that the revolutions/miles of a tire under a driving torque are greater than for a free-rolling tire.
 
-## Braking Force.
+## Braking Force
 The image shown below is similar to the tractive force one. The only thing changing is that the applied torque, $M_b$, is in the braking direction. As in the one before too, the slip angle here is still zero (questo significa che la ruota frena dritta, senza qualche momento sterzante applicato ad essa).
 This torque produces a braking force from the road to the tire, called $F_b$. This force is repsonsible of moving the print back relative to the axle, compressing the thread elements of the tire aft (“poppa” - quindi in questo caso verso destra) of the print. 
 
@@ -153,7 +153,7 @@ Figure below represents the same data plotted in a more familiar form - the corn
 
 ![](effect_of_slip_angle_and_slip_ratio_on_lateral_force.jpg)
 
-## Resultant Force vs. Resultant Slip Velocity.
+## Resultant Force vs. Resultant Slip Velocity
 One can gain a more general understanding of the development of tire forces by noting that they all originate within the print as a result of some slip.
 
 *Although it is convenient to think in terms of longitudinal and lateral forces, and slip ratio and slip angle (producing lateral slip), the tire only knows a resultant force and a resultant slip velocity.*
@@ -166,7 +166,7 @@ From the graphs above of the breaking / traction forces and of the lateral force
 
 - - -
 
-## Camber Effects.
+## Camber Effects
 Camber angle, $\phi$, is defined as **the angle between a tilted wheel place and the vertical.**
 
 The camber is *positive* if the *wheel leans outward at the top relative to the vehicle*, or *negative* if *it leans inward*. 
@@ -178,7 +178,7 @@ In racing circles, the tilt of a wheel is universally referred to as **camber**,
 
 <u>Note</u>: In the following figures, data is presented from several sources and generally refers to operating conditions that might be found at the **outside front wheel** of a car in a **right-hand (+) turn.**
 
-## Camber Force.
+## Camber Force
 In general, a ~cambered rolling pneumatic-tired wheel produces a lateral force in the direction of the tilt~. When this force occurs at zero slip angle, it is referred to as *camber thrust*. A lateral force component due to camber can also occur at slip angles other than zero.
 
 *Camber force is a function of the tire type, construction, shape, tread, pressure, load, tractive/breaking effort, and camber and slip angles.*
@@ -196,13 +196,13 @@ For radial tires the camber stiffness may be quite small since the lateral stifn
 <u>Note</u>: For wide street radial tires the camber forces tend to fall off at camber angles above 5°. For racing tires, the maximum force due to camber occurs at smaller angles.
 It is interesting to note that for rounded cross-section motorcycle tires, camber produces useful lateral force up to  perhaps 50°.
 
-### Aligning Torque due to Camber.
+### Aligning Torque due to Camber
 Camber also affects the aligning torque (or pneumatic trail). The roughly triangular distortion pattern of the print due to slip angle (the lateral forces in the print increasing toward the back) gives rise to an aligning torque wich is “stabilizing” in the linear range.
 On the other hand, aligning torques due to camber are generally quite small because of the fore and aft symmetry of the print distortion.
 
 Usually, the aligning torque due to camber tends to increase the slip angle. In combination with slip angle, the two effects tend to cancel and this may require an increase in mechanical trail to produce the desired centering effect.
 
-### Camber Roll-Off and Peak Lateral Force.
+### Camber Roll-Off and Peak Lateral Force
 In the linear range, camber thrust and lateral force due to slip angle are generally viewed as separate effects and are additive. This simply moves the cornering curve (lateral force vs slip angle) up or down parallel to itself depending on which way the wheel is cambered.
 
 As the linear range is exceeded, the additive camber effect decreases or is said to “roll-off” as seen in the graph shown below.  
@@ -220,7 +220,7 @@ Although no complete theory exists to explain the increase it is obiviously asso
 *Road-induced distortion due to **slip angle** is maximum towards the rear of the print where local vertical forces are* **low**; the *largest distortion in the case of **camber** is near the center of the print where the local vertical forces are* **high**.
 Comes as a consequence that slippage in the highly loaded center of the print is less likely than at the lightly loaded end of the print. This may help explain why higher lateral force is achieved when “aiding” camber is added to the slip angle.
 
-### Typical Cambered Tire Data.
+### Typical Cambered Tire Data
 The tire under inspection was tested at 35 psi pressure at 60 mph under dry conditions on this flat belt tire tester.
 The first graph shown is at 0° camber. The curves are labeled in terms of steer angle instead of slip angle; steering the wheels to the right is positive (+). The graph indicates that the lateral force-producing capability of the non-cambered tire is about the same for right and left steer. The tire behaviour then, with 0° camber configuration is nearly symmetrical.
 
@@ -235,15 +235,15 @@ While above is shown the graph for the negative 5° of camber angle, below you c
 
 ![](lateral_force_at_neg_ten_camber.jpg)
 
-### Camber Optimization.
+### Camber Optimization
 Curves such as those seen in the last three graphs above, or normalized versions as well, are useful for adjusting the camber to achieve maximum lateral force on a wheel at a known load and slip angle condition.
 
 The figure listed below is a plot of normalized lateral force vs load for three camber angles all at 7° of steer angle in a right-hand turn. This specific steer angle was chosen as close to the peak for the three camber angles.
 
-## Other Tire Effects.
+## Other Tire Effects
 So far this section on tire mechanics ha concentrated on forces, moments, and angles that relate the tire to the roads surface. This section lumps together several other factors that affect tire performance.
 
-### Tire Pressure.
+### Tire Pressure
 Tire pressure is one of the easiest and most common changes made in setting up a race car. The range of permissible pressures is frequently set by the tire manufacturer generally for reasons of durability. 
 
 Tire performance at low slip angle and modest side forces is described by the cornering stifness or the slip of the lateral force versus slip angle curve seen in the graph below.
@@ -263,7 +263,7 @@ Aligning torque is also affected by pressure. As the pressure is decreased, the 
 Tire drag will be decreased by an increase in pressure. There are two mechanisms of tire drag. The *rolling resistance* is a measure of energy lost in deforming the tire; with higher pressure, distortion and print size are reduced.
 Tire *induced drag* (drag resulting from cornering) will be reduced for a given required lateral force (below the limit) if the pressure is increased because the required slip angle is lower.
 
-### Tire Temperature.
+### Tire Temperature
 Tire temperature affects both the force-producing capability of the tire and also the life of the tire too. The first question that must be considered regarding tire temperature is, “what temperature?”
 
 The tire carcass is an elastic device that is partly responsible for the cornering stiffness. A change in temperature will change the modulus of elasticity of the rubber (unlike steel for example where this is constant over a large temperature range) and affect the cornering stiffness.
@@ -272,10 +272,10 @@ Tire pressure and temperature are interrelated - lower initial pressure results 
 
 Modern race tire tread compounds have an optimum temperature for maximum grip. If too cold, the tires are very slippery while if too hot the tread rubber will “melt”; in between the two is the correct temperature for operation. Unfortunately, the tire's temperature change continuoasly as the pressure, speed and operating forces vary.
 
-### Speed Effect.
+### Speed Effect
 Every tire performance varies with speed even it the effect is not consistent enough to be generalized. The only thing that seems likely is that tire force capability drops off as speed is increased. This drop-off may be gradual with increase in speed or abrupt in a narrow range of speeds. In some cases the lateral force capability increases slightly again as speed increases past a certain point.
 
-### Conicity and Plysteer.
+### Conicity and Plysteer
 Tires have “non-symmetrical due to fabrication and design” which create lateral force and aligning torque when a tire is tested at zero slip and camber angles. Two non-symmetries which occur in steady-state testing are conicity and plysteer which displace the measured curves from zero. On the vehicle this gives rise to steering/vehicle “pull” and “dog tracking”.
 
 Lets understand what these two terms mean by using the following definitions:
@@ -286,14 +286,14 @@ But what do steering/vehicle “pull” and “dog tracking” mean? Let’s see
 - Vehicle or steering pull happens primarly because of asymmetric lateral forces in the tires, leading to steering change, correction or drift due to the “cone-shape” of the tire under testing.
 - Vehicle or steering dog tracking results from misalignment or uneven forces affecting the **rear axle** of the car, making the car move laterally relative to its intended path.
 
-## Friction Circle and Ellipse.
+## Friction Circle and Ellipse
 In this section a single diagram is shown which combines the longitudinal and lateral forces. This diagram is composed of so-called friction ellipses and the friction circle. The friction circle represents the force-producing limit of the tire for a given set of operating conditions like load, surface, temperature, etc. This diagram for a single wheel/tire is conceptually similar to the friction circle diagram for the whole vehicle.
 
 The graph shown below is a plot of lateral force vs. longitudinal (breaking/traction) force for a series of slip angles and slip ratios. Only the right half of the diagram is shown. Lateral force is measured perpendicular to the wheel plane and longitudinal force is measured in the wheel plane.
 
 ![](friction_circle_diagram_right_hand_turn.jpg)
 
-### General Description of the Diagram.
+### General Description of the Diagram
 The vertical axis represents longitudinal force and various slip ratios are marked along the scale. Note that (+) is down and braking whole traction is up and (-) from the Sakai convention. Points on the vertical axis, on the other hand, could be used to develop the curves of slip ratio vs. longitudinal forces.
 
 The interesting part of the diagram is off-axis, where combined traction/breaking and lateral force are represented. For example, point “A” on the figure represents the force that is generated by 4° of slip angle and a slip ratio of about +0.036. This can be read off the force scales on the axes as 800 lb. of lateral force and 500 lb. of longitudinal force (braking).
@@ -305,7 +305,7 @@ If 600 lb. of tractive force is applied, the available lateral force drops to ab
 
 <u>Note</u>: The “g-g” diagram for the whole vehicle is a composite of the friction circle diagrams for all four wheels of the vehicle, taking into account load transfers (and other effects) which affect the size and shape of these four friction circles.
 
-## SAE Tire Axis System.
+## SAE Tire Axis System
 The only external forces acting on a car are gravity, aerodynamic forces and tire forces.
 The tire forces may be viewed as road forces acting on the car as a result of tire-road interaction. In this section we show how tire forces produce certain forces and moments and how traction forces (both driving and breaking) and lateral forces result in thrust and drag forces. Again, *the algebraic signs assume that the road applies the forces and moments to the tire*.
 
@@ -323,7 +323,7 @@ In fact, when viewed from the *rear* of the car, if the tires are leaning like t
 
 Inclination angle is strictly used for tire data. To use camber angle on a vehicle, the signs must be converted.
 
-## Discussion o Tire Forces.
+## Discussion o Tire Forces
 This section and the following section discuss tire forces and tire moments as defined by the SAE axis system. In addition, some analysis is given of certain combinations of these components that are significant to the vehicle as a whole.
 
 ### $F_z$: Normal Force (Load)
@@ -345,10 +345,10 @@ For example, the first case when slip angle, $\alpha = 0$. A drag force, $F_r$, 
 
 <u>Note</u>: The effective friction coefficients ($\mu$) front and rear are obtained by dividing the lateral force by the normal force acting on the wheel.
 
-## Discussion of Tire Moments.
+## Discussion of Tire Moments
 The tire moments will be discussed first in the context of zero $\gamma$ (inclination angle) or $\alpha$ (slip angle); this will help in visualizing how the moments are generated. Late, we discuss the $\gamma$ and $\alpha$ effects briefly.
 
-### Mz: Aligning Torque (or Moment).
+### Mz: Aligning Torque (or Moment)
 Earlier in this resume, the mechanism of aligning torque was shown to be a result of the lateral force distribution along the lenght of the tire footprint when there is a slip angle, $\alpha$.
 The way wheel aligning torque is accounted for is illustrated in the figure shown below.
 
@@ -364,7 +364,7 @@ The aligning torques associated with the wheels of a care are a weak function of
 
 The aligning torques are externally applied by the road to the car and they figure in the yaw moment equation for a complete car.
 
-### $M_x$: Overturning Moment.
+### $M_x$: Overturning Moment
 An overturning moment about x is present whenever the road reaction force, $F_{zR}$ (which acts upward), is not in the same plane as the wheel load, $F_z$ (which acts downwards). This is shown in the figure below:
 
 ![](tire_overturning_moment.jpg)
@@ -411,14 +411,14 @@ In the figure below it shows the graph plotting rolling resistance moment as a f
 
 - - -
 
-# Aerodynamic Fundamentals.
+# Aerodynamic Fundamentals
 Aerodynamic forces and moments, as well as the tire-road forces, affect "g-g" maneuvering performance (and stability and control). Unlike the tire forces which are primarily independent of speed, the aerodynamic forces increase rapidly with speed.
 
 For example, *aerodynamic drag determines the vehicle's performance characteristics at high speed including maximum speed, forward acceleration at the higher speeds, and braking deceleration* since modern open-wheel race cars have high enough drag that merely closing the throttle at top speed will decelerate the car about 1g.
 
 In addition to the direct effects of aerodynamic forces, the interaction of the aerodynamic and tire forces can have a large effect on lateral acceleration performance. For example, aerodynamic downforce (negative lift) increases the tire load and this in turn increases the lateral force capability of the tires.
 
-### Generalities.
+### Generalities
 The race car aerodynamicist is confronted with such problems as:
 
 - Reducing aerodynamic drag by external shaping, flow control, and efficient duct design for internal flow.
@@ -426,7 +426,7 @@ The race car aerodynamicist is confronted with such problems as:
 - Wind tunnel testing, interpretation of wind tunnel test results and full-scale aero-dynamic testing.
 - Coping with aerodynamic/chassis coupling effects as "porpoising" in ride height with ground-effects cars.
 
-## Properties of Air.
+## Properties of Air
 The atmosphere is composed of a physical mixture of gasses.
 
 The interaction between the particles of a gas mixture, in this case air, are of two kinds: 
@@ -446,7 +446,7 @@ Considering now the thin layer of air next to a body, called the _boundary layer
 
 There is an additional situation in which an interaction occurs between the boundary layer and the free stream which can result in so-called *separated flow*. This turbulent and stalled condition results in high drag and loss of lift.
 
-### Density.
+### Density
 Air surrounds the earth in a layer that is many miles high. Air has a mass and there is a gravitational attraction between the air and the earth in accordance with Newton's law of gravitation. 
 
 Air is a gas in which the particles are moving at random velocities. The energy of the particles is affected by temperature - the higher the temperature the greater the particle velocities and the wider the particle spacings. Of course, if the temperature is increased, the inter-particle spacing increases and the column must get taller; if the temperature decreases the column gets shorter.
@@ -457,13 +457,13 @@ The density of air changes in the following ways:
 - **Change in temperature** - A change in temperature can be due to atmospheric temperature changes, or a localized condition such as air exiting a radiator.
 - **Change in pressure** - Air density is directly proportional to barometric pressure. A change in the barometric pressure can be either due to atmospheric weather conditions or due to a change in altitude (less air is stacked up above at higher altitudes). 
 
-### Viscosity.
+### Viscosity
 Viscosity can be defined as the "stickiness" of a fluid. For example, oil is more viscous than water. The viscosity of a fluid is determined by the forces created within the fluid when there are velocity differences within the fluid itself.
 The viscous forces are transmitted between the fluid and to any solid body through a thin boundary layer of fluid that is attached to the body surface. The more viscous the fluid, the more force is transmitted to the body from the fluid. In the same manner, the more viscous a fluid, the harder it is to move a body through such fluid.
 
 Note that the effect of temperature change on absolute viscosity as well as the effect of temperature change on density might be significant.
 
-## Bernoulli's Equation.
+## Bernoulli's Equation
 Bernoulli's equation describes the conditions existing in the free stream, outside the boundary layer.
 It takes into consideration pressure (normal forces) and velocity as air flows smoothly around a body. 
 
@@ -500,7 +500,7 @@ The following picture shows the acting forces (simplified) on a small piece of v
 
 ![][stream_tube_element_of_volume.png]
 
-### Discussion of Bernoulli's Equation.
+### Discussion of Bernoulli's Equation
 This section will discuss each of the terms, $p$, $q$, and $H$, in Bernoulli's equation in some detail, with particular reference to how they are measured. In order:
 
 - **Static Pressure** ($p$) - is the pressure in the airstream (frequently referred to a $static$ pressure). Since it is not usually convenient to move an instrument along with the airstream, the static pressure in a moving airstream is commonly *measured with a static tube*.
@@ -528,7 +528,7 @@ $H$ can be measured by an open-ended tube, shown in the figure below, in which t
 ![][stagnation_point.png]
 As shown in the picture below the streamline at the stagnation point is the border between the flows over and under the vehicle.
 
-### Dynamic Pressure and Velocity Measurement.
+### Dynamic Pressure and Velocity Measurement
 If the total head, $H$, and the static pressure, $p$, are known at a point in the fluid, the dynamic pressure can be obtained by subtraction, as noted before: 
 
 $q=\frac{1}{2}\rho V^2 = H -p$
@@ -537,7 +537,7 @@ The conventional **pitot static tube type of airspeed indicator**, shown in the 
 
 ![][pitot_static_tube_airspeed_indicator.png]
 
-## Pressure Distribution.
+## Pressure Distribution
 Bernoulli's equation indicates that *if the dynamic pressure is increased, the static pressure in the stream must decrease*, or vice versa.
 An air foil is a device which utilizes these pressure changes to generate force. 
 
@@ -575,7 +575,7 @@ The effectiveness of converting dynamic pressure to static pressure and lift, fo
 
 ![][wing_section.png]
 
-## Consideration of Real Flows.
+## Consideration of Real Flows
 As stated in the previous section, velocity and pressure relationships were treated for an ideal fluid moving around smooth body shapes such as air foils. Since air does not always act like a perfect fluid and few race cars are finely streamlined shapes, this section contains some general remarks on the characteristic of real airflows.
 
 In the first place, consider the boundary layer of the air at the body surface. In this layer the shear forces (viscous effects) are important. **In fact, these shear forces tend to slow the airflow down and remove energy from the moving stream.** 
@@ -597,12 +597,12 @@ To add, any sharp edge will result in separation. An infinite acceleration of th
 
 Of course, **separated flow is usually undesirable. The pressure in the wake region is low, causing an increase on the pressure drag**. Energy is required to maintain the turbulence and "drag along" the low-pressure region. Latter energy must come from the vehicle's power plant.
 
-## Aerodynamic Testing.
+## Aerodynamic Testing
 As for three-dimensional flows about bluff automotive shapes in close proximity to the ground (and not only that) are extremely complex, for race car designers, the wind tunnel and full-scale development will remain the chosen for aerodynamic development for some time.
 
 This section takes into consideration and describes the aerodynamic forces and moment coefficients, that are widely used to compare one vehicle to another.
 
-### Wind Tunnel Testing.
+### Wind Tunnel Testing
 The size of the wind tunnel determines the largest model size that can be used.
 If the actual vehicle and some expensive tunnels is available it is of course desirable to test at full size as this avoids scaling problems with models.
 
@@ -655,7 +655,7 @@ $\frac{\rho V^2 L^2}{\mu VL} = \frac{\rho VL}{\mu} = \frac{VL}{\upsilon} = RN$
 
 Assuming that the value of $\upsilon$ is the same for both tests, then VL should also be the same for both tests. In addition, if the test scale is 1/4, the wind tunnel test speed would ideally be four times the vehicle speed. If that's not possible, it may be useful to repeat a test with several different speeds (so also different RN) and note the variation of the measured forces.
 
-### Flow Visualization.
+### Flow Visualization
 It is highly desirable to be able to "see" the streamlines in a steady flow conditions and the extent of flow separation and wake size. This is important whether the test is performed in a wind tunnel or at the track. Although purely qualitative, flow visualization can indicate where problems exist and the extent of improvement when changes are made.
 
 ![][tufts_on_a_wing.png]
@@ -680,7 +680,7 @@ Smoke can be generated in a ton amount of ways. Titanium or tin tetrachloride (b
 
 Another technique for flow visualization is that of painting the surface of a model with a mixture of lampblack and kerosene. The tunnel is then started up, the flow stabilized and the tunnel shut off. The streaks of lampblack on the model are then observed or photographed.
 
-##  SAE Aerodynamic Axis System.
+##  SAE Aerodynamic Axis System
 Historically, wind tunnel facilities worldwide have used different nomenclature and reference axes. To avoid this and provide a common nomenclature for use in publishing road vehicle aerodynamics reports, the SAE Road Vehicle Committee published an international representation.
 
 The axis system origin is located on the ground at mid-wheelbase and mid-track as shown in the figure below.
@@ -698,7 +698,7 @@ The additional equations shown below the figure allow transformation to forces a
 - $SR$ = component of aero side force at rear axle
 
 ![][sae_aerodynamic_axis_system.png]
-## Aerodynamic Force/Moment Coefficients.
+## Aerodynamic Force/Moment Coefficients
 Aerodynamic forces and moments are primarily due to pressure over the body surface. A coefficient must then be introduced to take into account the effect of the body shape on the velocity distribution over the body and the orientation of the body in the fluid.
 The **drag coefficient**, $C_D$, is defined as the following:
 
@@ -726,17 +726,17 @@ The six forces and moments are then given by:
 
 - - -
 
-# Vehicle Axis System.
+# Vehicle Axis System
 
 At any given instant of time, a vehicle is subjected to a single force acting at some location and in some direction. This so-called external or applied force maintains the velocity or causes an acceleration of the vehicle. _This force is made up of tire, aerodynamic, and gravitational force components_.
 Since these different components are governed by different physical laws and it is not convenient to deal with this as a single, it is normal to separate tire, aerodynamic and gravitational force components act at different locations and in different directions relative to the vehicle chassis.
 
 In order to calculate accelerations and velocities in directions of interest (such as fore and aft for performance and/or left or right for turning behaviour), it is necessary to define axis systems to which the accelerations and velocities and the forces/torques causing them can be referred.
 
-## Two types of Axis Systems.
+## Two types of Axis System
 The two basic axis systems used and defined by the Society of Automotive Engineers (SAE) are described in the following sections.
 
-### Earth-Fixed Axis System.
+### Earth-Fixed Axis System
 This system (the capital letter system) is fixed to the ground and the letters X-Y-Z are used to denote the three principal directions; **X and Y are horizontal and at right angles to each other, Z is vertical downward.**
 
 <u>Note</u>: This earth-referenced axis system is used in this text only when it is necessary to reference some aspect of the vehicle motion to a fixed point or direction. 
@@ -744,7 +744,7 @@ This system (the capital letter system) is fixed to the ground and the letters X
 In problems related to vehicle motion relative to the ground, it is common to start off with the origin of the vehicle axis system (described below), coinciding with the earth axis system origin. Frequently, the axes of the two systems will also coincide initially. The calculation or measurements will then indicate the relative motions of the two axis systems.
 
 
-### Vehicle Axis System. 
+### Vehicle Axis System
 The Vehicle Axis System has it origin in aircraft usage. The principal reason for its automotive as well as aircraft use is that it is _fixed_ in the vehicle and moves with it.
 The inertia properties (moments and products of inertia) remain constant relative to this set of axes but would be variable if referenced to a set of axes fixed to the ground, for example. Not only would they be variable but they would lose in physical meaning to the engineer as the vehicle maneuvered. 
 
@@ -820,7 +820,7 @@ _Moments_ - The external moments acting on the automobile can be summed into one
 - **Pitching Moment** ($M_y$) is the component of the moment vector tending to rotate the vehicle about the y-axis, positive clockwise when looking in the positive direction of the y-axis.
 - **Yawing Moment** ($M_z$) is the component of the moment vector tending to rotate the vehicle about the z-axis, positive clockwise when looking in the positive direction of the z-axis.
 
-## Some thoughts on sign conventions.
+## Some thoughts on sign conventions
 In the SAE Tire Axis System, the slip angle is defined as the angle between the wheel plane and the direction of wheel travel. _In this system, if the wheel is moving forward to the left (as in a right-hand turn), the slip angle is negative but the lateral force is positive_. 
 Following this convention, the tire lateral force data is plotted in the fourth quadrant. In actual practice, users of tire data frequently plot cornering force in the first quadrant. This negative relationship between lateral force and slip angle can be confusing in the kinematic relationship between slip and steer angles.
 
@@ -828,3 +828,127 @@ Following this convention, the tire lateral force data is plotted in the fourth 
 
 **Defining "slip angle" in terms of a lateral/forward velocity ratio further perpetuates the notion that the tire is literally sliding sideways as a whole.**
 In actual fact, because of the tire rolling motion, the print has areas composed of adhesion in the front and sliding in the rear.
+
+
+- - - 
+
+# Simplified Steady-State Stability and Control
+In order to obtain a mental framework for understanding vehicle behaviour we consider vehicle motions as composed of steady-state turning (this chapter) and dynamic (transient) maneuvering (next chapter). 
+
+**In the past and even today the terms understeer and oversteer have dominated considerations of automotive stability and control. It is one factor among a number that determine automobile motion behaviour.**
+
+One of the basic design requirements of a race car is the provision of control and stability characteristics that enable a skilled driver to operate at or near the g-g acceleration limits. 
+As the above requirement indicates, in real life the vehicle behaviour and the driver's capabilities are inseparably connected. The driver provides the intelligence to the "driver-vehicle" entity while the vehicle provides the maneuvering forces. The figure below illustrates this relationship in a generalized "block" diagram.
+
+![][block_diagram_driver_vehicle.png]
+
+Because of the difficulty of representing the driver in an analysis and because the driver's characteristics are not subject to direct control, the engineer focuses on the control and stability of the vehicle component part of the system.
+In fact, as it can be seen, for simplicity purposes, the throttle, brake and any other control devices have been omitted from the graph.
+
+A concept which is helpful in approaching a subject as difficult as automobile stability and control is the "ladder of abstraction" sketched below:
+
+![][ladder_of_abstraction.png]
+
+The term complete reality at the top is the functioning car, say as the race driver experiences it, not what the driver may care to think about it. As we move down to the ladder we move away from physical car and make simplifying assumptions as to how it works.
+
+_The approach followed here is to start near the bottom of the ladder with an extremely simplified vehicle model. If the basic concepts can be clarified at a simple level they will carry through to a more realistic level._
+
+## The Elementary Automobile Defined
+This representation of the automobile (often referred to as the "bicycle" model) is defined as follows:
+- _No_ lateral load transfer, the vehicle compressed to a single-track.
+- _No_ longitudinal load transfer.
+- _No_ rolling or pitching motions.
+- Linear range tires.
+- Constant forward velocity (chosen by the user).
+- _No_ aerodynamic effects.
+- Position control
+- _No_ chassis or suspension compliance effects.
+
+As noted in the list above, the tire cornering force curve (lateral force vs. slip angle) is treated as having linear, transitional, and frictional (breakaway) regions.
+The race car operates in all of these regions, in particular in the transitional and frictional regions during cornering. For this simple model, tire operation is in the linear regime only, corresponding to cornering at less than about 0.4g.
+
+It is also further assumed that the "vehicle" operates on smooth surfaces with no ride motions. We will also use the small angle assumptions to simplify the equations unless otherwise noted.
+
+<u>Note</u>: With this simple vehicle model, shown in the figure below, we can investigate the effects of front and rear tire cornering stiffness, center of gravity (CoG) location along the wheel base, and geometric steer angle on the yawing and sideslipping motions (which determine the path and attitude of the vehicle).
+
+![][the_bicycle_model.png]
+
+**For this representation of the vehicle, the two "degrees of freedom" are the motion variables, $v$ (the lateral velocity) and $r$ (the yawing velocity). The input variable is the front wheel steer angle, $\delta$, which is under driver control.**
+
+When an automobile makes a turn it normally goes through three phases. The first is the turn entry, for example from a straight. In this phase the yawing velocity and the lateral velocity (relative to the vehicle y-axis as shown in the figure above) build up from zero in straight running to their values in the steady turn. This is called the "_transient turn-entry_" phase where $r$ and $v$ are changing with time. The second phase is "_steady-state cornering_" $r$ and $v$ and the vehicle and tire slip angles are constant and the vehicle is moving along an unvarying path radius, $R$ (or path curvature defined as $1/R$). The final phase is "_turn exit_", where the yawing and lateral velocities are changing with time as they return to zero for straight running, "_transient turn-exit_".
+
+## Steady-State Low-Speed Cornering Geometry
+We begin by considering the **geometry** of very low-speed cornering in the steady-state phase only. 
+
+<u>Note</u>: Under these conditions where fore and aft and lateral accelerations are negligible, real vehicles behave like the previously defined "bicycle" model in that **there is no body roll, lateral load transfer or related effects**. 
+**The slip angles are zero and the front and rear wheels roll in their own planes so that turning is purely a geometric proposition**. The front and rear wheels move on concentric circles, the front wheels are on the larger circle as shown in the figure below.
+
+The **radius of turn** is normally taken _as the distance from the turning center to the center of gravity (CoG) of the vehicle_. For normal turns the small angle approximation, $l/R$, is close to the required steering angle, $\delta$ (in radians).
+As the wheelbase, $l$, is increased, the steering angle increases in proportion for a constant turning radius.
+
+The wheelbase angle also known as "_Ackermann Steering Angle_" is then the geometric steer angle required for a car of wheelbase, $l$, to track a turn of radius, $R$, at low speeds **where the external forces due to accelerations are negligible**.
+
+The Ackermann Steering Angle is not to be confused with so-called "_Ackermann steering_" where the left- and right-hand front wheels are set up to give theoretically perfect steering at low speeds by being tangent to concentric circles about a turning center which lies on a line through the rear axle.
+The Classic Ackermann configuration for steering is shown in the figure below and results in "_toe out_" of the outside wheel in a turn. Race cars have frequently used "_reverse Ackermann angle_".
+
+![][ackermann_parallel_and_reverse_ackermann.png]
+
+## Steady-State Cornering of the Neutral Steer Car.
+The engineering definitions of neutral, understeer and oversteer can be developed with the bicycle model. 
+Consider what happens with the "bicycle" model when the cornering speed is increased such that the lateral acceleration can no longer be neglected.
+*The centripetal acceleration, $V^2 /R$, acts inward toward the turning center. The lateral force provided by the tires and has a magnitude of $(W/g) \cdot (V^2/R) = ma$*, in accordance with Newton's second law. Another way of treating this dynamic situation is to represent the presence of the acceleration by a hypothetical external force equal to $-ma$. The system is then brought into equilibrium and treated as a static condition. The external force is called the _centrifugal inertia force_. 
+
+Several interesting observations can be made from a comparison of the figure below and the "_Ackerman steering angle_" (a) graph:
+
+![][turning_with_lateral_forces.png]
+
+- The same steer angle is required to negotiate the same radius curve regardless of speed.
+- The vehicle slip angle is obtained by rotating the entire vehicle by the amount $\alpha_R$ (since in this simple model the plane of the rear wheel is always parallel to the chassis fore and aft centerline). This rotation establishes the _attitude_ of the machine to its path. This angle, $\beta$, is normally measured between the chassis centerline at the CoG and the tangent to the path. $\beta$ is called the _vehicle slip angle_ or _body slip angle_.
+- In the situation shown the rear wheels are travelling on a smaller radius (R) than the fronts.
+- _The rotation that gives rise to the rear slip angle also steers the front wheels - in this case the front slip angle is the same as the rear_.
+
+To emphasize the last point, for the vehicle configuration chosen in this example (CoG at mid-wheelbase and equal tire cornering stiffnesses front and rear), the slip angle required at the front to produce the force and moment equilibrium is obtained entirely from the rotation of the vehicle during the establishment of the rear slip angle. With this configuration, the steer angle, $\delta$, is completely determined by the path curvature independents of the speed or lateral acceleration developed. In short, the steering angle remains at the Ackermann, $\delta = l/R$.
+
+**The vehicle configuration under discussion is termed _neutral steer_ (NS) because as lateral acceleration (side force) is applied to the machine, it neither "oversteers" nor "understeers" the intended geometric path established by the Ackermann Steering Angle.
+
+Let's examine now the NS car behaviour *under an external disturbance*.
+Suppose that the vehicle is traveling down a straight and level road with zero steering angle. Let us assume that it then runs onto a stretch of uniformly tilted road. If no change is made to the steering angle, one can expect that after the transient phase is over, the vehicle will be running on a straight line angled down the slope by the magnitude of the equal front and rear slip angles.
+_The heading of the vehicle_ (in this case the angle between the chassis and the road centerline) _will remain zero_.
+
+Where, the angle of the path in the plane of the road is:
+
+$\alpha_F = \alpha_R = \left( \frac{1}{C_F} \right) \left( \frac{W_\phi}{2} \right) = \left( \frac{1}{C_R} \right) \left( \frac{W_\phi}{2} \right)$ 
+
+The figure below shows the example stated and described above.
+
+![][ns_car_on_a_tilted_road.png]
+
+## Steady-State Cornering of the Understeer Car
+Consider now the simple "bicycle" model with the center of gravity located at 1/3 of the wheelbase aft (number with no significance other than it places the CoG well ahead of the mid-wheelbase point) of the front track.
+
+The static load on the front wheels is now 2/3 W and that on the rear is 1/3 W; the front wheels are carrying twice the load of the rear. Also assume that, by changes in tire sizes and pressures the cornering slopes are equalized front and rear at the same numerical value utilized in the NS example, then with the same wheelbase, the Ackermann Steering Angle for a given path curvature is the same as for the NS model. 
+
+What happens as the cornering speed is increased, and the vehicle experiences a centrifugal side force?
+
+The vehicle acts as a horizontal beam or lever. The side force must be reacted at the individual tracks in inverse proportion to the CoG to track distance (in ratio to the wheel-base). Therefore, the front track takes 2/3 of the cornering force and the rear the remaining 1/3.
+In addition, since the cornering stiffnesses are identical front and rear, the slip angle at the front must be twice that on the rear, so $\alpha_F / \alpha_R = 2$.
+
+Figure below shows the case when the turn radius, $R_1$, is made equal to that of the NS configuration. In these circumstances, the vehicle attitude angle, $\beta$, is less by the reduction in the rear slip angle; the front slip angle that arises from this rotation is correspondingly less.
+
+![][turning_with_lateral_forces_us_car.png]
+
+In short, **the steering angle required to maintain the specified radius is $(2/3)\alpha_1$ more than for the NS car, and it is compensated by adding more steering angle**. This increase arises from the difference between the front and rear slip angles - the Ackermann has remained unchanged (same $l$ and $R$). _It can be said that, as far as vehicle knows, slip angles are merely steer angles_.
+
+For complex real vehicles additional steer effects must be taken into account as well as the slip angle difference due to the CoG location. In general most of the effects which change the slip angles are proportional to lateral acceleration, for example, roll steers and compliance (deflection) steers.
+
+The important point to note is that at the same lateral acceleration and steer angle the turn radius of the forward CoG machine is greater than that of the NS vehicle. **The forward CoG machine is termed _understeer_ (US) - as a lateral acceleration is applied it "understeers" the geometric path established by the Ackermann Steering Angle**. 
+
+For reasons of clarity we have discussed US in terms of the longitudinal CoG location with equal cornering stiffness F and R. **This may be generalized by pointing out that any modifications which affect the rate of change of the front and rear slip angles with lateral acceleration will change the steady-state UO (under/oversteer) properties of the vehicle**. 
+_The slopes can be affected by a large number of design factors including tire size and pressure, roll and compliance steers, camber effects, longitudinal and lateral load transfer, aerodynamic loading, and others_.
+
+## Steady-State Cornering of the Oversteer Car
+We have now examined the steering properties of NS and US cars due to front and rear slip angle changes under side forces (such as lateral acceleration). 
+
+<u>Note</u>: As a reminder, on the neutral steer car the rates of change of $\alpha_F$ and $\alpha_R$ with the lateral acceleration $A_Y$ are identical and the car corners on the geometric Ackermann Steering Angle. On the understeer car, on the other hand, the rate of change of $\alpha_F$ with $A_Y$ exceeded that of $\alpha_R$ with $A_Y$ and either the path radius, $R$, increased with lateral acceleration or more steer angle was required to hold the radius.
+
+**It is then easy to anticipate the steering behaviour of the _oversteer_ (OS) car. In this machine the rate of change of rear slip angle with $A_Y$ (lateral acceleration) is greater than the rate of change of the front slip angle; the slip angle steer at the rear predominates and the car "oversteers" the intended geometrical path established by the Ackermann Steering Angle.
